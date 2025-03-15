@@ -140,22 +140,16 @@
       50% { transform: scale(1.05); }
       100% { transform: scale(1); }
     }
-    /* Bonus note styling (eye-catching) */
+    /* Bonus note styling: smaller text with only the highlight styled */
     .bonus-note {
-      font-size: 1em;
-      color: #fff;
-      background: #e74c3c;
-      padding: 12px 20px;
-      border-radius: 8px;
+      font-size: 1.1em;
+      color: #7f8c8d;
       margin-bottom: 20px;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(231, 76, 60, 0.5);
-      animation: pulseBonus 2s infinite;
+      font-weight: normal;
     }
-    @keyframes pulseBonus {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
+    .highlight {
+      font-weight: bold;
+      color: red;
     }
     /* Mobile games section styling */
     .mobile-games {
@@ -232,7 +226,7 @@
     </button>
     <!-- Bonus note beneath the button -->
     <div class="bonus-note">
-      Sign up and complete your first offer to receive a coupon code for 500 extra bonus points on TraffUp!
+      Sign up and complete your first offer to receive a coupon code for <span class="highlight">500 bonus points</span> on TraffUp!
     </div>
     <!-- Mobile Games section -->
     <div class="mobile-games">
